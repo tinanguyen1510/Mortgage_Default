@@ -1,8 +1,8 @@
 # Mortgage_Default
  This project analyzes the characteristics of delinquent loans and borrowers at the time of origination. The period covered in this study is between 2013 and 2018.
  
- 1. Folder 'Code' containing all codes used in this project. 
-   a. Preprocessing.ipynb imports, cleans the data, and merges different dataframes
+ 1. Folder 'Code' containing all codes used in this project.   
+   a. Preprocessing.ipynb imports, cleans the data, and merges different dataframes  
    b. Modeling.ipynb applies several machine learning methods to classify delinquent vs performing loans  
  
  These two files run a subsample of the original data to demonstrate that the codes have no error.  
