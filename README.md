@@ -9,4 +9,4 @@
  
  2. Since the original data is too big to run on local machine. Pycharm was used to connect to an AWS EC2 instance to run the data on the whole population. Folder 'Archive - Pycharm format' includes the similar codes as the sample codes with different input data and naming schemes for output data.  
  
- 3. Folder 'Model Scores' includes all scores resulting from running the 2.Modeling.py on the whole population.  
+ 3. Folder 'Model Scores' includes all scores resulting from running 2.Modeling.py on the whole population.  
