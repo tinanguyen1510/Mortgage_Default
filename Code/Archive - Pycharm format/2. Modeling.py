@@ -17,12 +17,12 @@ from collections import Counter
 # check your working directory
 DIR = os.path.join( os.path.dirname(os.getcwd()))
 print(DIR)
-DATA_DIR = DIR + '\DATS 6501 - Capstone Project - Tina Nguyen\Data'
+DATA_DIR = os.path.join(os.path.join(os.path.join(DIR, 'Desktop'),'DATS 6501 - Capstone Project - Tina Nguyen'), '02. Data')
 print(DATA_DIR)
-
+print(os.listdir(DATA_DIR))
 # IMPORT DATA
 
-master_df = pd.read_csv(os.path.join(DATA_DIR, 'd90_full_population.csv'))
+master_df = pd.read_csv(os.path.join(DATA_DIR, '02. d90_full_population.csv'))
 print(master_df.shape)
 print(master_df.columns)
 
@@ -34,7 +34,7 @@ y = master_df['default']
 
 # summary statistics
 stat = X[['ltv', 'dti', 'sato', 'interest_rate','cr_scr','MI_pct']].describe()
-stat.to_csv(os.path.join(DATA_DIR, 'full population summary statistics.csv'))
+stat.to_csv(os.path.join(DATA_DIR, '03. full population summary statistics.csv'))
 
 # convert categorical variables to dummy
 X = pd.get_dummies(X)

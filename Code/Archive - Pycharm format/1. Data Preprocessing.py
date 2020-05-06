@@ -2,11 +2,13 @@ import pandas as pd
 import numpy as np
 import os
 
+# Raw data downloaded should be in text formal and save in the following folder
+# ~\DATS 6501 - Capstone Project - Tina Nguyen\02. Data'
 DIR = os.path.join( os.path.dirname(os.getcwd()))
-DATA_DIR = DIR + '\Data'
-SAMPLE_DIR = DATA_DIR + '\Sample Data'  # replace this with the directory of your raw data
-print(SAMPLE_DIR)
-print(os.listdir(SAMPLE_DIR))
+print(DIR)
+DATA_DIR = os.path.join(os.path.join(os.path.join(DIR, 'Desktop'),'DATS 6501 - Capstone Project - Tina Nguyen'), '02. Data')
+print(DATA_DIR)
+print(os.listdir(DATA_DIR))
 
 # SEPARATE PERFORMANCE AND TIME DATA INTO 2 DIFFERENT LISTS
 keyword = 'time'
